@@ -1,0 +1,38 @@
+.dashboard-container {
+    padding: 2em;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.logout-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    float: right;
+}
+
+.logout-button:hover {
+    background-color: #c9302c;
+}
+
+.conditions-section,
+.recommendations-section {
+    background: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    margin: 0.5em 0;
+    color: #555;
+}
