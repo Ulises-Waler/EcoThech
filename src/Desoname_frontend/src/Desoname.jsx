@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { CSSTransition } from 'react-transition-group';
 import './Desoname.css'; 
+import { Col, Row, Button } from 'react-bootstrap';
 
 function Desoname({ token, onLogout }) {
     const [datos, setDatos] = useState({
@@ -51,7 +52,7 @@ function Desoname({ token, onLogout }) {
             unmountOnExit
         >
             <div className="dashboard-container">
-                <h1>Datos del Tomate</h1>
+                <h1>Cultivo</h1>
                 <div className="conditions-section">
                     <h2>Condiciones del Cultivo</h2>
                     <p>Luz: {datos.luz}</p>
@@ -67,7 +68,17 @@ function Desoname({ token, onLogout }) {
                     <p>{datos.recomendacion.fertilizacion}</p>
                     <p>{datos.recomendacion.enfermedad}</p>
                 </div>
+
+                <Row>
+                    <Col>                
                 <button onClick={handleLogout} className="logout-button">Cerrar Sesión</button>
+                    </Col>
+
+                    <Col>                
+                <Button onClick={handleLogout} className='success'>Aplicación Movil</Button>
+                    </Col>                
+                </Row>
+
             </div>
         </CSSTransition>
     );
